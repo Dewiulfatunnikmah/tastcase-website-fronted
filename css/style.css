@@ -1,0 +1,1041 @@
+:root {
+--black: #000000;
+--White: #ffffff;
+--Primary: #1391ad;
+--Accent: #f4cd00;
+}
+
+* {
+font-family: "poppins";
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+outline: none;
+border: none;
+text-decoration: none;
+}
+
+body {
+font-family: "poppins";
+background-color: var(--black);
+color: #fff;
+}
+
+/*navbar */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.4rem 7%;
+background-color: rgba(1, 1, 1, 0.8);
+border-bottom: 1px solid #4b757e;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 9999;
+}
+.navbar .navbar-logo {
+font-family: "Uncial Antiqua", cursive;
+font-size: 2rem;
+font-weight: 700;
+color: #ffffff;
+}
+
+.navbar .navbar-nav a {
+color: #ffffff;
+display: inline-block;
+font-size: 1.4rem;
+margin: 0 1rem;
+}
+
+/* berubah warna */
+.navbar .navbar-nav a:hover {
+color: var(--Primary);
+}
+
+.navbar .navbar-nav a::after {
+content: "";
+display: block;
+padding-bottom: 0.5rem;
+border-bottom: 0.1rem solid var(--Primary);
+transform: scaleX(0);
+transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+color: #fff;
+margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+color: var(--Primary);
+}
+
+#hamburger-menu {
+display: none;
+}
+
+.hero .about-img {
+position: absolute;
+width: 1342px;
+height: 473px;
+left: 85px;
+top: 151px;
+background-image: url(../img/Rectangle2850.png);
+}
+
+.hero h1 {
+/* We Dont Just PracticeBut Calms The Soul */
+position: absolute;
+width: 553px;
+height: 124px;
+left: 96px;
+top: 669px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 130%;
+/* or 62px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.hero p {
+/* Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in maecenas viverra. Fermentum sed amet eget elementum
+volutpat amet augue. */
+
+position: absolute;
+width: 721px;
+height: 111px;
+left: 706px;
+top: 676px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 184%;
+/* or 37px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.about {
+/* Rectangle 2851 */
+
+position: absolute;
+width: 1512px;
+height: 86px;
+left: 0px;
+top: 868px;
+
+background: var(--Primary);
+}
+
+.about .highligh {
+padding: 20px;
+display: flex;
+gap: 22px;
+font-family: "Poppins";
+font-style: italic;
+font-weight: 600;
+font-size: 32px;
+line-height: 130%;
+}
+
+.latihan {
+/* Rectangle 2855 */
+position: absolute;
+width: 1331px;
+height: 430px;
+left: 96px;
+top: 1034px;
+background: url(../img/Rectangle2855.png);
+z-index: 9999;
+}
+
+.deskripsi {
+/* Rectangle 2856 */
+
+position: absolute;
+width: 1512px;
+height: 720px;
+left: 0px;
+top: 1330px;
+
+background-color: rgba(19, 145, 173, 0.25);
+}
+
+.deskripsi h1 {
+/* Fitness is The Best Solution For You */
+
+position: absolute;
+width: 685px;
+height: 124px;
+left: 96px;
+top: 188px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 130%;
+/* or 62px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.deskripsi p {
+/* Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in maecenas viverra. Fermentum sed amet eget elementum
+volutpat amet augue. Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in maecenas viverra. Fermentum sed amet
+eget elementum volutpat amet augue. */
+
+position: absolute;
+width: 685px;
+height: 185px;
+left: 100px;
+top: 320px;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 184%;
+/* or 37px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.button-cta {
+/* Rectangle 2853 */
+
+position: absolute;
+width: 192px;
+height: 65px;
+left: 96px;
+top: 590px;
+
+background: linear-gradient(180deg, #24ffdd -28.46%, #1391ad 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+border-radius: 32.5px;
+}
+.button-cta p {
+position: absolute;
+width: 192px;
+height: 65px;
+left: 30px;
+top: 15px;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 184%;
+/* identical to box height, or 37px */
+
+letter-spacing: 0.045em;
+
+color: #ffffff;
+}
+.contact {
+/* Rectangle 17 */
+
+position: absolute;
+width: 444px;
+height: 434px;
+left: 983px;
+top: 1518px;
+
+/* White */
+
+background: #ffffff;
+border-radius: 25px;
+}
+
+.contact-us {
+/* Contact Us! */
+
+position: absolute;
+width: 185px;
+height: 42px;
+left: 1023px;
+top: 1553px;
+
+font-family: "PT Serif";
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: 0.03em;
+
+color: #000000;
+}
+
+.identitas {
+/* Vector-email */
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1026px;
+top: 1628px;
+}
+.E-mail {
+/* Email */
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1080px;
+top: 1620px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+
+.Alamat-email {
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1080px;
+top: 1645px;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+.icon-phone {
+/* Vector */
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1025px;
+top: 1690px;
+/* Black */
+}
+
+.phone {
+/* Email */
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1083px;
+top: 1685px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+
+.phone-num {
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1085px;
+top: 1710px;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+
+.icon-address {
+/* Vector */
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1030px;
+top: 1750px;
+/* Black */
+}
+.Address {
+/* Email */
+position: absolute;
+right: 5.56%;
+bottom: 16.67%;
+width: 185px;
+height: 37px;
+left: 1085px;
+top: 1750px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+
+.Alamat p {
+position: absolute;
+right: 5.56%;
+width: 185px;
+height: 37px;
+left: 1085px;
+top: 1780px;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+
+.Trainer .latihan {
+/* Rectangle 2854 */
+
+position: absolute;
+width: 436px;
+height: 154px;
+left: 96px;
+top: 2140px;
+
+background: url(../img/Rectangle2854.png), #d9d9d9;
+border-radius: 214px;
+}
+
+.TR {
+/* Trainer Professional */
+
+position: absolute;
+width: 685px;
+height: 62px;
+left: 658px;
+top: 2146px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 130%;
+/* or 62px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.deskripsiTr {
+/* Lorem ipsum dolor sit amet consectetur. Eu diam nulla netus in maecenas viverra. Fermentum sed amet eget elementum
+volutpat amet augue. */
+
+position: absolute;
+width: 769px;
+height: 74px;
+left: 658px;
+top: 2222px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 184%;
+/* or 37px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.menu-card-nama {
+position: absolute;
+width: 189px;
+height: 44px;
+left: 84px;
+top: 2384px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 184%;
+/* or 44px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.menu-card-img {
+/* Rectangle 2859 */
+
+position: absolute;
+width: 302px;
+height: 390px;
+left: 84px;
+top: 2438px;
+
+border-radius: 12px;
+}
+
+.menu-card-nama1 {
+/* Step Hanson */
+
+position: absolute;
+width: 189px;
+height: 44px;
+left: 431px;
+top: 2384px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 184%;
+/* or 44px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.menu-card-img1 {
+/* Rectangle 2860 */
+position: absolute;
+width: 302px;
+height: 390px;
+left: 431px;
+top: 2438px;
+
+border-radius: 12px;
+}
+
+.menu-card2 .menu-card-nama2 {
+/* Angela Traine */
+
+position: absolute;
+width: 189px;
+height: 44px;
+left: 778px;
+top: 2384px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 184%;
+/* or 44px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.menu-card2 .menu-card-img2 {
+/* Rectangle 2861 */
+
+position: absolute;
+width: 302px;
+height: 390px;
+left: 778px;
+top: 2438px;
+border-radius: 12px;
+}
+
+.menu-card-nama3 {
+/* Robert Bert */
+
+position: absolute;
+width: 189px;
+height: 44px;
+left: 1125px;
+top: 2384px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 184%;
+/* or 44px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.menu-card-img3 {
+/* Rectangle 2862 */
+
+position: absolute;
+width: 302px;
+height: 390px;
+left: 1125px;
+top: 2438px;
+
+border-radius: 12px;
+}
+
+.review p {
+/* They Are Happy Members */
+
+position: absolute;
+width: 648px;
+height: 62px;
+left: 432px;
+top: 2938px;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 130%;
+/* or 62px */
+
+letter-spacing: 0.02em;
+
+color: #ffffff;
+}
+
+.review .testi1 {
+/* Review */
+box-sizing: border-box;
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 17px 29px;
+gap: 21px;
+
+position: absolute;
+width: 398px;
+height: 206px;
+left: 125px;
+top: 3081px;
+
+/* White */
+
+background: #ffffff;
+border: 1px solid rgba(0, 0, 0, 0.05);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 15px;
+}
+.review .testi1 .foto {
+/* Ellipse 1 */
+position: absolute;
+width: 88px;
+height: 88px;
+left: 29px;
+top: 17px;
+}
+
+.review .testi1 h2 {
+/* Phone */
+
+position: absolute;
+left: 36.93%;
+right: 46.48%;
+top: 15.53%;
+bottom: 69.9%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+/* Black */
+
+color: #000000;
+}
+
+.review .testi1 p {
+/* CV. CAN Creative */
+
+position: absolute;
+left: 36.93%;
+right: 47.49%;
+top: 33.98%;
+bottom: 55.83%;
+
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+
+.desk {
+/* Lorem ipsum dolor sit amet consecasatetur. Natoque sed dui odio urna lectus enim feugiat justo. */
+
+/*padding: 8rem 3%;*/
+margin-top: 100px;
+align-items: center;
+font-family: "Poppins";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.05em;
+
+color: #585252;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.review .testi2{
+Width
+Hug (398px)
+Height
+Hug (206px)
+Top
+3081px
+Left
+570px
+Radius
+15px
+Padding
+17px, 29px, 17px, 29px
+Gap
+21px
+#FFFFFF
+#000000
+5%
+1px
+All sides
+#000000
+5%
+Inner alignment
+Drop shadow
+X0
+Y4
+B4
+S0
+#000000
+15%
+/* Review */
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 17px 29px;
+gap: 21px;
+
+position: absolute;
+width: 398px;
+height: 206px;
+left: 570px;
+top: 3081px;
+
+/* White */
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.05);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 15px;
+}
+
+.review .testi2 h2 {
+/* Phone */
+
+position: absolute;
+left: 36.93%;
+right: 42.96%;
+top: 15.53%;
+bottom: 69.9%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+/* Black */
+
+color: #000000;
+}
+
+.review .testi2 p {
+/* CV. CAN Creative */
+
+position: absolute;
+left: 36.93%;
+right: 55.28%;
+top: 33.98%;
+bottom: 55.83%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+
+}
+
+.desk2 {
+/* Lorem ipsum dolor sit amet consecasatetur. Natoque sed dui odio urna lectus enim feugiat justo. */
+
+width: 340px;
+height: 63px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.05em;
+
+color: #585252;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.review .testi3 {
+/* Review */
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 17px 29px;
+gap: 21px;
+
+position: absolute;
+width: 398px;
+height: 206px;
+left: 1015px;
+top: 3081px;
+
+/* White */
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.05);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 15px;
+}
+
+.review .testi3 h3 {
+/* Ozzie*/
+
+position: absolute;
+left: 36.93%;
+right: 49.25%;
+top: 15.53%;
+bottom: 69.9%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+/* Black */
+
+color: #000000;
+
+}
+
+.review .testi3 p {
+/* CV. CAN Creative */
+
+position: absolute;
+left: 36.93%;
+right: 46.23%;
+top: 33.98%;
+bottom: 55.83%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+
+/* Black */
+
+color: #000000;
+}
+
+.desk3 {
+/* Lorem ipsum dolor sit amet consecasatetur. Natoque sed dui odio urna lectus enim feugiat justo. */
+width: 340px;
+height: 63px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+letter-spacing: 0.05em;
+color: #585252;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.footer-top {
+height: 94px;
+width: 1512px;
+left: 0px;
+top: 0px;
+border-radius: 0px;
+border: 1px solid #5A5A5A;
+background: linear-gradient(0deg, #1AB9BF, #1AB9BF),
+linear-gradient(0deg, #5A5A5A, #5A5A5A);
+
+
+}
+
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+html {
+font-size: 75%;
+}
+}
+
+/* Tablet */
+@media (max-width: 758px) {
+html {
+font-size: 62.5%;
+}
+#hamburger-menu {
+display: inline-block;
+}
+
+.navbar .navbar-nav {
+position: absolute;
+top: 100%;
+right: -100%;
+background-color: #fff;
+width: 30rem;
+height: 100vh;
+transition: 0.3s;
+}
+
+.navbar .navbar-nav.active {
+right: 0;
+}
+.navbar .navbar-nav a {
+color: var(--black);
+display: block;
+margin: 1.5rem;
+font-size: 2rem;
+}
+
+.navbar .navbar-nav a::after {
+transform-origin: 0 0;
+}
+.navbar .navbar-nav a:hover::after {
+transform: scaleX(0.2);
+}
+}
+
+/* MObile Phone */
+@media (max-width: 450px) {
+html {
+font-size: 55%;
+}
+}
