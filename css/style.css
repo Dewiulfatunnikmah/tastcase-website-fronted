@@ -973,20 +973,14 @@ order: 1;
 flex-grow: 0;
 }
 
-.footer-top {
-height: 94px;
+.contact1{
+height: 374px;
 width: 1512px;
 left: 0px;
-top: 0px;
+margin-top: 3407px;
 border-radius: 0px;
-border: 1px solid #5A5A5A;
-background: linear-gradient(0deg, #1AB9BF, #1AB9BF),
-linear-gradient(0deg, #5A5A5A, #5A5A5A);
-
 
 }
-
-
 /* Media Queries */
 
 /* Laptop */
